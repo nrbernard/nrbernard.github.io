@@ -1,0 +1,5 @@
+_site/
+config.rb
+scss/
+.sass-cache
+.DS_Store

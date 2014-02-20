@@ -1,0 +1,96 @@
+/* line 1, ../scss/_page.scss */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box; }
+
+/* line 7, ../scss/_page.scss */
+body {
+  background: url(../img/tweed.png); }
+
+/* line 11, ../scss/_page.scss */
+.container {
+  width: 95%;
+  max-width: 38rem;
+  margin: 0 auto; }
+
+/* line 17, ../scss/_page.scss */
+.site-header {
+  margin-top: 1.5em;
+  margin-bottom: 1.5em;
+  border-bottom: 3px solid #ebead5; }
+
+/* line 23, ../scss/_page.scss */
+.site-footer {
+  border-top: 3px solid #ebead5;
+  margin-top: 1.5em;
+  padding-top: 0.75em;
+  margin-bottom: 1.5em;
+  text-align: center; }
+  @media (min-width: 480px) {
+    /* line 23, ../scss/_page.scss */
+    .site-footer {
+      text-align: right; } }
+
+/* line 34, ../scss/_page.scss */
+.copyright > span {
+  display: block; }
+  @media (min-width: 480px) {
+    /* line 34, ../scss/_page.scss */
+    .copyright > span {
+      display: inline; } }
+
+/* line 61, ../../../../../Applications/CodeKit.app/Contents/Resources/engines/compass/frameworks/compass/stylesheets/compass/typography/_vertical_rhythm.scss */
+* html {
+  font-size: 100%; }
+
+/* line 64, ../../../../../Applications/CodeKit.app/Contents/Resources/engines/compass/frameworks/compass/stylesheets/compass/typography/_vertical_rhythm.scss */
+html {
+  font-size: 16px;
+  line-height: 1.5em; }
+
+/* line 6, ../scss/_type.scss */
+html {
+  font-size: 100%; }
+
+/* line 10, ../scss/_type.scss */
+body {
+  color: #ebead5;
+  font-family: 'Lato', arial, sans-serif; }
+
+/* line 15, ../scss/_type.scss */
+h1 {
+  font-size: 3em;
+  line-height: 1.33333em;
+  line-height: 1.33333em;
+  margin-bottom: 1em;
+  color: #e16b4e; }
+
+/* line 22, ../scss/_type.scss */
+p {
+  font-size: 1.5em;
+  line-height: 1.33333em;
+  line-height: 1.33333em;
+  margin-bottom: 1em; }
+
+/* line 28, ../scss/_type.scss */
+a, a:visited {
+  color: #e16b4e;
+  text-decoration: none; }
+  /* line 31, ../scss/_type.scss */
+  a:hover, a:visited:hover {
+    color: #f3c6bb; }
+
+/* line 36, ../scss/_type.scss */
+.site-title {
+  margin-bottom: 0.25em; }
+
+/* line 40, ../scss/_type.scss */
+.copyright {
+  font-size: 1.25em;
+  line-height: 1.6em;
+  line-height: 1.6em; }
+
+/* line 45, ../scss/_type.scss */
+.social {
+  padding: 0 .5em; }

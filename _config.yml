@@ -1,0 +1,4 @@
+name: Nick Bernard
+markdown: redcarpet
+pygments: true
+exclude: scss
