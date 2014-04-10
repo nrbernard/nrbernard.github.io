@@ -1,44 +1,17 @@
-/* line 1, ../scss/_page.scss */
-* {
-  margin: 0;
+/* line 1, ../scss/_reset.scss */
+ul {
   padding: 0;
+  margin: 0; }
+
+/* line 6, ../scss/_reset.scss */
+* {
   box-sizing: border-box; }
 
-/* line 7, ../scss/_page.scss */
-body {
-  background: url(../img/tweed.png); }
-
-/* line 11, ../scss/_page.scss */
-.container {
-  width: 95%;
-  max-width: 38rem;
-  margin: 0 auto; }
-
-/* line 17, ../scss/_page.scss */
-.site-header {
-  margin-top: 1.5em;
-  margin-bottom: 1.5em;
-  border-bottom: 3px solid #ebead5; }
-
-/* line 23, ../scss/_page.scss */
-.site-footer {
-  border-top: 3px solid #ebead5;
-  margin-top: 1.5em;
-  padding-top: 0.75em;
-  margin-bottom: 1.5em;
-  text-align: center; }
-  @media (min-width: 480px) {
-    /* line 23, ../scss/_page.scss */
-    .site-footer {
-      text-align: right; } }
-
-/* line 34, ../scss/_page.scss */
-.copyright > span {
-  display: block; }
-  @media (min-width: 480px) {
-    /* line 34, ../scss/_page.scss */
-    .copyright > span {
-      display: inline; } }
+/* line 17, ../scss/_bp.scss */
+.group:after {
+  content: "";
+  display: block;
+  clear: both; }
 
 /* line 61, ../../../../../Applications/CodeKit.app/Contents/Resources/engines/compass/frameworks/compass/stylesheets/compass/typography/_vertical_rhythm.scss */
 * html {
@@ -55,42 +28,115 @@ html {
 
 /* line 10, ../scss/_type.scss */
 body {
-  color: #ebead5;
-  font-family: 'Lato', arial, sans-serif; }
+  color: black;
+  font-family: 'Raleway', arial, sans-serif;
+  font-weight: 300; }
 
-/* line 15, ../scss/_type.scss */
+/* line 16, ../scss/_type.scss */
 h1 {
-  font-size: 3em;
-  line-height: 1.33333em;
-  line-height: 1.33333em;
-  margin-bottom: 1em;
-  color: #e16b4e; }
+  font-size: 2.66667em;
+  line-height: 1.125em;
+  line-height: 0.375em;
+  margin-bottom: 0.75em; }
 
 /* line 22, ../scss/_type.scss */
 p {
-  font-size: 1.5em;
-  line-height: 1.33333em;
-  line-height: 1.33333em;
+  font-size: 1.22222em;
+  line-height: 1.63636em;
+  line-height: 1.22727em;
   margin-bottom: 1em; }
 
 /* line 28, ../scss/_type.scss */
 a, a:visited {
-  color: #e16b4e;
+  color: black;
   text-decoration: none; }
   /* line 31, ../scss/_type.scss */
   a:hover, a:visited:hover {
-    color: #f3c6bb; }
+    -webkit-transition: all 0.25s ease-out;
+    -moz-transition: all 0.25s ease-out;
+    -o-transition: all 0.25s ease-out;
+    transition: all 0.25s ease-out;
+    color: #b22b14; }
 
-/* line 36, ../scss/_type.scss */
-.site-title {
-  margin-bottom: 0.25em; }
+/* line 37, ../scss/_type.scss */
+a.name {
+  font-size: 2.66667em;
+  line-height: 1.125em;
+  line-height: 0.75em;
+  text-transform: uppercase;
+  letter-spacing: .1em; }
+  /* line 42, ../scss/_type.scss */
+  a.name:hover {
+    color: black; }
 
-/* line 40, ../scss/_type.scss */
-.copyright {
-  font-size: 1.25em;
-  line-height: 1.6em;
-  line-height: 1.6em; }
+/* line 48, ../scss/_type.scss */
+a.logo:hover {
+  color: #00b26b; }
 
-/* line 45, ../scss/_type.scss */
+/* line 53, ../scss/_type.scss */
+.tagline {
+  font-family: 'Libre Baskerville', serif;
+  font-style: italic;
+  color: white;
+  font-size: 3.05556em;
+  line-height: 1.30909em;
+  line-height: 1.30909em; }
+  @media (min-width: 650px) {
+    /* line 53, ../scss/_type.scss */
+    .tagline {
+      font-size: 4.16667em;
+      line-height: 1.2em;
+      line-height: 1.44em; } }
+
+/* line 1, ../scss/_page.scss */
+html {
+  background: url(../img/mountain.jpg) no-repeat center top fixed;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover; }
+
+/* line 13, ../scss/_page.scss */
+.container {
+  width: 95%;
+  max-width: 45em;
+  margin: 0 auto; }
+
+/* line 19, ../scss/_page.scss */
+.content {
+  display: block;
+  width: 100%; }
+
+/* line 24, ../scss/_page.scss */
 .social {
-  padding: 0 .5em; }
+  padding: 1em; }
+
+/* line 1, ../scss/_header.scss */
+.site-header {
+  text-align: center;
+  display: block;
+  margin-top: 2em;
+  margin-bottom: 1em;
+  padding-bottom: 0.5em; }
+
+/* line 10, ../scss/_header.scss */
+.name {
+  text-align: center; }
+
+/* line 14, ../scss/_header.scss */
+.fa-stack {
+  vertical-align: -20%; }
+
+/* line 18, ../scss/_header.scss */
+.site-navigation {
+  float: right;
+  width: 100%; }
+
+/* line 23, ../scss/_header.scss */
+ul.navigation {
+  list-style: none; }
+  /* line 25, ../scss/_header.scss */
+  ul.navigation li {
+    padding-top: .5em;
+    float: left;
+    width: 33%; }
