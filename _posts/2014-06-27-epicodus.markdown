@@ -1,0 +1,63 @@
+---
+layout: post
+title:  "The Reluctant Programmer"
+title-tag: The Reluctant Programmer - Nick Bernard
+date:   2014-06-27 23:13:27
+permalink: /the-reluctant-programmer.html
+category: news
+excerpt: Why I gave up on poetry to learn programming full-time
+js: <script src="https://google-code-prettify.googlecode.com/svn/loader/run_prettify.js?skin=desert"></script>
+---
+<p class="intro">I always figured I'd be a professional poet.</p>
+
+During my first term of college, I read Larkin's "[This Be The Verse](http://www.poetryfoundation.org/poem/178055)." For better or worse, all my 18-year-old self's cynicism and angst was validated by an English librarian writing 50 years before me:
+
+><span class="verse even">Man hands on misery to man.</span>
+><span class="verse odd">It deepens like a coastal shelf.</span>
+><span class="verse even">Get out as early as you can,</span>
+><span class="verse odd">And don’t have any kids yourself.</span>
+
+I kept reading and writing, and everyone encouraged and supported me, so poetry seemed like a totally doable career path. After college and outside the structure of writing workshops, however, my dedication waned. I'd feel guilty about not writing and jealous of friends who got work published. I wasn't enjoying poetry anymore, but since I'd made it such a big part of my identity I felt trapped.
+
+In a weird panic, I did what seemed like logical next step and dedicated several months and a substantial amount of money to apply to MFA programs in poetry. If you need any proof of a human's capacity to cling to hope in the face of woefully slim odds, browse the posts of an MFA application pool Facebook page. After a fall and winter spent refreshing my email inbox, I got on a couple of waitlists, but all seven schools I applied to rejected me.
+
+## &lt;/poetry&gt;
+
+During that time, I'd started playing around with learning HTML and CSS on my own site. I never had much intention because I'd always thought it detracted from the time I should have been dedicating to my "creative" pursuits. So, after being totally burnt out with poetry, I decided to take web development more seriously and spent the last year learning code.
+
+I discovered that while I could rarely felt motivated to finish a poem, I could easily spend hours following a tutorial on jQuery or tweaking a page's CSS to get the typography just right. I got a much stronger sense of accomplishment from getting a few lines of JavaScript to work than writing a few lines of verse.
+
+## Code as Craft
+
+In trying to hold on to what I saw was my only creative outlet, I wasn't able to see the craft of web development. When I let myself get more get more interested in code, I realized how much the two disciplines overlap. All the things I like about poetry are also valued in programming: there's no single correct solution to a problem, good code doesn't repeat itself, and you shouldn't write in ten lines what you could write in one.
+
+## Epicodus
+
+Recently, I've been more proactive about shifting to a career as a developer. To that end, I applied and got accepted into [Epicodus](http://www.epicodus.com), a four-month web development bootcamp here in Portland.
+
+The first exercise was the FizzBuzz test, which is evidently a classic interview question for programmers. Here's [my result]({{ base.url }}fizzbuzz/), and I'll post the code as a benchmark to look back on:
+
+<pre class="prettyprint"><code class="language-js">
+$(document).ready(function() {
+
+var number = prompt("What number should I FizzBuzz up to?");
+
+$(".number").text(number);
+
+for (var index = 1; index <= number; index += 1) {
+		if (index % 3 === 0 && index % 5 === 0) {
+			$(".fizzbuzz").append("&lt;li class=&#39;both&#39;&gt;FizzBuzz&lt;/li&gt;");
+		} else if (index % 3 === 0) {
+			$(".fizzbuzz").append("&lt;li class=&#39;fizz&#39;&gt;Fizz&lt;/li&gt;");
+		} else if (index % 5 === 0){
+			$(".fizzbuzz").append("&lt;li class=&#39;buzz&#39;&gt;Buzz&lt;/li&gt;");
+		} else {
+			$(".fizzbuzz").append("&lt;li&gt;" + index + "&lt;/li&gt;");
+		}
+	};
+});
+</code></pre>
+
+It was truly thrilling create something from scratch to solve a problem, and it's the same feeling I got when I first started writing poems. I'm excited to apply what I've learned about poetry to code at Epicodus.
+
+As much as I can, I'll write about what I'm learning here and throw projects up on [GitHub](https://github.com/nrbernard).

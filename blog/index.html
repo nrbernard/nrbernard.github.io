@@ -1,0 +1,16 @@
+---
+layout: default
+title-tag: Writing on Web Development by Nick Bernard
+description: View Nick Bernard's portfolio of web development and design projects.
+---
+<h1 class="heading">Blog Posts</h1>
+	<ul class="posts">
+		{% for post in site.posts %}
+		
+		<li class="post">
+			<h2><a href="{{ post.url }}">{{ post.title }}</a></h2>
+			<p class="excerpt">{{ post.excerpt }}</p>
+		</li>
+		
+		{% endfor %}
+	</ul>

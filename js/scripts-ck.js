@@ -1,0 +1,1 @@
+$(document).ready(function(){var e=["poems","love letters","code"];skils.forEach(function(e){$(".skill").text(e).delay(800)})});
