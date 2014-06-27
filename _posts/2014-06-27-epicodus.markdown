@@ -2,6 +2,7 @@
 layout: post
 title:  "The Reluctant Programmer"
 title-tag: The Reluctant Programmer - Nick Bernard
+description: How I learned writing code can be as creative as writing poetry.
 date:   2014-06-27 23:13:27
 permalink: /the-reluctant-programmer.html
 category: news

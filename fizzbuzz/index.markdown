@@ -1,7 +1,7 @@
 ---
 layout: default
 title-tag: FizzBuzz Solution - Nick Bernard
-description: Nick Bernard writes code and poems in Portland, Oregon.
+description: Here's my solution to the FizzBuzz test.
 ---
 <h1>FizzBuzz</h1>
 
