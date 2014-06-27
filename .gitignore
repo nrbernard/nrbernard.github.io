@@ -3,4 +3,3 @@ config.rb
 scss/
 .sass-cache
 .DS_Store
-js/vendor/
