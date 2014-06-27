@@ -2,14 +2,16 @@
   "CodeKitInfo" : "This is a CodeKit project configuration file. It is designed to sync project settings across multiple machines. Modifying the contents of this file can be a poor life decision if you don't know what you're doing. This file is not useful unless accompanied by the project that created it in CodeKit. For more information, see: http:\/\/incident57.com\/codekit",
   "creatorBuild" : "8403",
   "files" : {
-    "\/work\/index.html" : {
+    "\/img\/kyle-jillian.png" : {
       "ignoreWasSetByUser" : 0,
       "ignore" : 0,
       "hidden" : 0,
       "outputPathIsSetByUser" : 0,
-      "inputAbbreviatedPath" : "\/work\/index.html",
-      "outputAbbreviatedPath" : "No Output Path",
-      "fileType" : 2048
+      "inputAbbreviatedPath" : "\/img\/kyle-jillian.png",
+      "processed" : 1,
+      "outputAbbreviatedPath" : "\/img\/kyle-jillian.png",
+      "initialSize" : 1410728,
+      "fileType" : 8192
     },
     "\/_site\/js\/vendor\/jquery-1.11.1.min.js" : {
       "ignoreWasSetByUser" : 1,
@@ -28,7 +30,7 @@
       "hidden" : 0,
       "outputPathIsSetByUser" : 0,
       "inputAbbreviatedPath" : "\/_site\/img\/tweed.png",
-      "processed" : 1,
+      "processed" : 0,
       "outputAbbreviatedPath" : "\/_site\/img\/tweed.png",
       "initialSize" : 21371,
       "fileType" : 8192
@@ -148,7 +150,7 @@
       "hidden" : 0,
       "outputPathIsSetByUser" : 0,
       "inputAbbreviatedPath" : "\/_site\/img\/kyle-jillian-site.jpg",
-      "processed" : 1,
+      "processed" : 0,
       "outputAbbreviatedPath" : "\/_site\/img\/kyle-jillian-site.jpg",
       "initialSize" : 81991,
       "fileType" : 4096
@@ -183,6 +185,17 @@
       "fileType" : 4,
       "debugStyle" : 0
     },
+    "\/img\/tweed.png" : {
+      "ignoreWasSetByUser" : 0,
+      "ignore" : 0,
+      "hidden" : 0,
+      "outputPathIsSetByUser" : 0,
+      "inputAbbreviatedPath" : "\/img\/tweed.png",
+      "processed" : 1,
+      "outputAbbreviatedPath" : "\/img\/tweed.png",
+      "initialSize" : 21371,
+      "fileType" : 8192
+    },
     "\/_layouts\/post.html" : {
       "ignoreWasSetByUser" : 0,
       "ignore" : 0,
@@ -203,17 +216,6 @@
       "initialSize" : 95293,
       "fileType" : 4096
     },
-    "\/img\/tweed.png" : {
-      "ignoreWasSetByUser" : 0,
-      "ignore" : 0,
-      "hidden" : 0,
-      "outputPathIsSetByUser" : 0,
-      "inputAbbreviatedPath" : "\/img\/tweed.png",
-      "processed" : 1,
-      "outputAbbreviatedPath" : "\/img\/tweed.png",
-      "initialSize" : 21371,
-      "fileType" : 8192
-    },
     "\/googlef686ad8f858d4d4c.html" : {
       "ignoreWasSetByUser" : 0,
       "ignore" : 0,
@@ -223,24 +225,13 @@
       "outputAbbreviatedPath" : "No Output Path",
       "fileType" : 2048
     },
-    "\/_site\/img\/mountain.jpg" : {
-      "ignoreWasSetByUser" : 0,
-      "ignore" : 0,
-      "hidden" : 0,
-      "outputPathIsSetByUser" : 0,
-      "inputAbbreviatedPath" : "\/_site\/img\/mountain.jpg",
-      "processed" : 1,
-      "outputAbbreviatedPath" : "\/_site\/img\/mountain.jpg",
-      "initialSize" : 4419673,
-      "fileType" : 4096
-    },
     "\/_site\/img\/ashley-site.jpg" : {
       "ignoreWasSetByUser" : 0,
       "ignore" : 0,
       "hidden" : 0,
       "outputPathIsSetByUser" : 0,
       "inputAbbreviatedPath" : "\/_site\/img\/ashley-site.jpg",
-      "processed" : 1,
+      "processed" : 0,
       "outputAbbreviatedPath" : "\/_site\/img\/ashley-site.jpg",
       "initialSize" : 95293,
       "fileType" : 4096
@@ -257,16 +248,14 @@
       "fileType" : 4,
       "debugStyle" : 0
     },
-    "\/_site\/js\/scripts-ck.js" : {
+    "\/css\/normalize.css" : {
       "ignoreWasSetByUser" : 0,
-      "ignore" : 1,
+      "ignore" : 0,
       "hidden" : 0,
       "outputPathIsSetByUser" : 0,
-      "inputAbbreviatedPath" : "\/_site\/js\/scripts-ck.js",
-      "outputStyle" : 1,
-      "syntaxCheckerStyle" : 1,
-      "outputAbbreviatedPath" : "\/_site\/js\/scripts-ck-ck.js",
-      "fileType" : 64
+      "inputAbbreviatedPath" : "\/css\/normalize.css",
+      "outputAbbreviatedPath" : "No Output Path",
+      "fileType" : 16
     },
     "\/scss\/_page.scss" : {
       "ignoreWasSetByUser" : 0,
@@ -279,6 +268,17 @@
       "outputAbbreviatedPath" : "\/css\/_page.css",
       "fileType" : 4,
       "debugStyle" : 0
+    },
+    "\/_site\/js\/scripts-ck.js" : {
+      "ignoreWasSetByUser" : 0,
+      "ignore" : 1,
+      "hidden" : 0,
+      "outputPathIsSetByUser" : 0,
+      "inputAbbreviatedPath" : "\/_site\/js\/scripts-ck.js",
+      "outputStyle" : 1,
+      "syntaxCheckerStyle" : 1,
+      "outputAbbreviatedPath" : "\/_site\/js\/scripts-ck-ck.js",
+      "fileType" : 64
     },
     "\/js\/scripts.js" : {
       "ignoreWasSetByUser" : 1,
@@ -312,14 +312,16 @@
       "fileType" : 4,
       "debugStyle" : 0
     },
-    "\/css\/normalize.css" : {
+    "\/_site\/img\/mountain.jpg" : {
       "ignoreWasSetByUser" : 0,
       "ignore" : 0,
       "hidden" : 0,
       "outputPathIsSetByUser" : 0,
-      "inputAbbreviatedPath" : "\/css\/normalize.css",
-      "outputAbbreviatedPath" : "No Output Path",
-      "fileType" : 16
+      "inputAbbreviatedPath" : "\/_site\/img\/mountain.jpg",
+      "processed" : 0,
+      "outputAbbreviatedPath" : "\/_site\/img\/mountain.jpg",
+      "initialSize" : 4419673,
+      "fileType" : 4096
     },
     "\/img\/ashley.png" : {
       "ignoreWasSetByUser" : 0,
@@ -332,21 +334,21 @@
       "initialSize" : 634872,
       "fileType" : 8192
     },
-    "\/_site\/fizzbuzz\/index.html" : {
-      "ignoreWasSetByUser" : 0,
-      "ignore" : 0,
-      "hidden" : 0,
-      "outputPathIsSetByUser" : 0,
-      "inputAbbreviatedPath" : "\/_site\/fizzbuzz\/index.html",
-      "outputAbbreviatedPath" : "No Output Path",
-      "fileType" : 2048
-    },
     "\/_site\/the-reluctant-programmer.html" : {
       "ignoreWasSetByUser" : 0,
       "ignore" : 0,
       "hidden" : 0,
       "outputPathIsSetByUser" : 0,
       "inputAbbreviatedPath" : "\/_site\/the-reluctant-programmer.html",
+      "outputAbbreviatedPath" : "No Output Path",
+      "fileType" : 2048
+    },
+    "\/_site\/fizzbuzz\/index.html" : {
+      "ignoreWasSetByUser" : 0,
+      "ignore" : 0,
+      "hidden" : 0,
+      "outputPathIsSetByUser" : 0,
+      "inputAbbreviatedPath" : "\/_site\/fizzbuzz\/index.html",
       "outputAbbreviatedPath" : "No Output Path",
       "fileType" : 2048
     },
@@ -399,6 +401,44 @@
       "outputAbbreviatedPath" : "No Output Path",
       "fileType" : 2048
     },
+    "\/_site\/blog\/index.html" : {
+      "ignoreWasSetByUser" : 0,
+      "ignore" : 0,
+      "hidden" : 0,
+      "outputPathIsSetByUser" : 0,
+      "inputAbbreviatedPath" : "\/_site\/blog\/index.html",
+      "outputAbbreviatedPath" : "No Output Path",
+      "fileType" : 2048
+    },
+    "\/js\/vendor\/jquery-1.11.1.min.js" : {
+      "ignoreWasSetByUser" : 1,
+      "ignore" : 1,
+      "hidden" : 0,
+      "outputPathIsSetByUser" : 0,
+      "inputAbbreviatedPath" : "\/js\/vendor\/jquery-1.11.1.min.js",
+      "outputStyle" : 1,
+      "syntaxCheckerStyle" : 1,
+      "outputAbbreviatedPath" : "\/js\/vendor\/jquery-1.11.1.min-ck.js",
+      "fileType" : 64
+    },
+    "\/_site\/work\/index.html" : {
+      "ignoreWasSetByUser" : 0,
+      "ignore" : 0,
+      "hidden" : 0,
+      "outputPathIsSetByUser" : 0,
+      "inputAbbreviatedPath" : "\/_site\/work\/index.html",
+      "outputAbbreviatedPath" : "No Output Path",
+      "fileType" : 2048
+    },
+    "\/_site\/index.html" : {
+      "ignoreWasSetByUser" : 0,
+      "ignore" : 0,
+      "hidden" : 0,
+      "outputPathIsSetByUser" : 0,
+      "inputAbbreviatedPath" : "\/_site\/index.html",
+      "outputAbbreviatedPath" : "No Output Path",
+      "fileType" : 2048
+    },
     "\/img\/mountain.jpg" : {
       "ignoreWasSetByUser" : 0,
       "ignore" : 0,
@@ -422,44 +462,6 @@
       "fileType" : 4,
       "debugStyle" : 0
     },
-    "\/js\/vendor\/jquery-1.11.1.min.js" : {
-      "ignoreWasSetByUser" : 1,
-      "ignore" : 1,
-      "hidden" : 0,
-      "outputPathIsSetByUser" : 0,
-      "inputAbbreviatedPath" : "\/js\/vendor\/jquery-1.11.1.min.js",
-      "outputStyle" : 1,
-      "syntaxCheckerStyle" : 1,
-      "outputAbbreviatedPath" : "\/js\/vendor\/jquery-1.11.1.min-ck.js",
-      "fileType" : 64
-    },
-    "\/_site\/index.html" : {
-      "ignoreWasSetByUser" : 0,
-      "ignore" : 0,
-      "hidden" : 0,
-      "outputPathIsSetByUser" : 0,
-      "inputAbbreviatedPath" : "\/_site\/index.html",
-      "outputAbbreviatedPath" : "No Output Path",
-      "fileType" : 2048
-    },
-    "\/_site\/work\/index.html" : {
-      "ignoreWasSetByUser" : 0,
-      "ignore" : 0,
-      "hidden" : 0,
-      "outputPathIsSetByUser" : 0,
-      "inputAbbreviatedPath" : "\/_site\/work\/index.html",
-      "outputAbbreviatedPath" : "No Output Path",
-      "fileType" : 2048
-    },
-    "\/_site\/blog\/index.html" : {
-      "ignoreWasSetByUser" : 0,
-      "ignore" : 0,
-      "hidden" : 0,
-      "outputPathIsSetByUser" : 0,
-      "inputAbbreviatedPath" : "\/_site\/blog\/index.html",
-      "outputAbbreviatedPath" : "No Output Path",
-      "fileType" : 2048
-    },
     "\/scss\/_nav.scss" : {
       "ignoreWasSetByUser" : 0,
       "ignore" : 1,
@@ -481,17 +483,6 @@
       "outputAbbreviatedPath" : "No Output Path",
       "fileType" : 2048
     },
-    "\/_site\/js\/vendor\/prism.min.js" : {
-      "ignoreWasSetByUser" : 0,
-      "ignore" : 0,
-      "hidden" : 0,
-      "outputPathIsSetByUser" : 0,
-      "inputAbbreviatedPath" : "\/_site\/js\/vendor\/prism.min.js",
-      "outputStyle" : 1,
-      "syntaxCheckerStyle" : 1,
-      "outputAbbreviatedPath" : "\/_site\/js\/vendor\/prism.min-ck.js",
-      "fileType" : 64
-    },
     "\/_layouts\/default.html" : {
       "ignoreWasSetByUser" : 0,
       "ignore" : 0,
@@ -501,14 +492,14 @@
       "outputAbbreviatedPath" : "No Output Path",
       "fileType" : 2048
     },
-    "\/_site\/css\/normalize.css" : {
+    "\/work\/index.html" : {
       "ignoreWasSetByUser" : 0,
       "ignore" : 0,
       "hidden" : 0,
       "outputPathIsSetByUser" : 0,
-      "inputAbbreviatedPath" : "\/_site\/css\/normalize.css",
+      "inputAbbreviatedPath" : "\/work\/index.html",
       "outputAbbreviatedPath" : "No Output Path",
-      "fileType" : 16
+      "fileType" : 2048
     },
     "\/img\/kyle-jillian-site.jpg" : {
       "ignoreWasSetByUser" : 0,
@@ -521,16 +512,14 @@
       "initialSize" : 81991,
       "fileType" : 4096
     },
-    "\/img\/kyle-jillian.png" : {
+    "\/_site\/css\/normalize.css" : {
       "ignoreWasSetByUser" : 0,
       "ignore" : 0,
       "hidden" : 0,
       "outputPathIsSetByUser" : 0,
-      "inputAbbreviatedPath" : "\/img\/kyle-jillian.png",
-      "processed" : 1,
-      "outputAbbreviatedPath" : "\/img\/kyle-jillian.png",
-      "initialSize" : 1410728,
-      "fileType" : 8192
+      "inputAbbreviatedPath" : "\/_site\/css\/normalize.css",
+      "outputAbbreviatedPath" : "No Output Path",
+      "fileType" : 16
     }
   },
   "manualImportLinks" : [
