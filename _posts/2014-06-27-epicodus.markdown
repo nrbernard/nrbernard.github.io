@@ -8,6 +8,7 @@ permalink: /the-reluctant-programmer.html
 category: news
 excerpt: Why I gave up on poetry to learn programming full-time
 js: <script src="https://google-code-prettify.googlecode.com/svn/loader/run_prettify.js?skin=desert"></script>
+comments: true
 ---
 <p class="intro">I always figured I'd be a professional poet.</p>
 
