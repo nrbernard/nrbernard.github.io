@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <link href="css/bootstrap.min.css" rel="stylesheet" type="text/css">
+  <link href="css/styles.css" rel="stylesheet" type="text/css">
+  <link href='http://fonts.googleapis.com/css?family=Montserrat:400,700' rel='stylesheet' type='text/css'>
+
+  <script src="js/jquery-1.11.1.js"></script>
+  <script src="js/scripts.js"></script>
+
+  <title>Scrabble Word Score Calculator</title>
+</head>
+<body>
+  <div class="container">
+    <div class="row">
+      <h1>Scrabble Word Score Calculator</h1>
+      <p class="lead">Enter a word to see how many points it's worth in Scrabble!</p>
+
+      <form id="scrabble" class="form-inline">
+        <div class="form-group center-block">
+          <label for="input-word"></label>
+          <input id="input-word" class="form-control" type="text" placeholder="Enter a word">
+        </div>
+
+        <button type="submit" class="btn btn-success">Score</button>
+      </form>
+
+      <div id="result">
+        <ul class="tiles clearfix"></ul>
+
+        <p class="lead">The word "<span class="word"></span>" is worth <span class="score"></span> points.</p>
+        <p>(For fun, hover over the tiles.)</p>
+      </div>
+    </div>
+  </div>
+</body>
+</html>
