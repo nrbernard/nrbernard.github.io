@@ -11,7 +11,7 @@ describe("scrabble", function () {
 		scrabble("epicodus").should.equal(13);
 	});
 
-	it("calculates the score for a word with mixed characters", function () {
+	it("calculates the score for a word with mixed case characters", function () {
 		scrabble("ePiCOdus").should.equal(13);
 	});
 

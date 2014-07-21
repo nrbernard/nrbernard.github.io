@@ -66,6 +66,7 @@ $(document).ready(function() {
     }
 
     $("input#input-word").val("");
+    displayValue = [];
     event.preventDefault();
   });
 });
