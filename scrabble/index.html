@@ -15,19 +15,23 @@
 <body>
   <div class="container">
     <div class="row">
-      <h1>Scrabble Word Score Calculator</h1>
-      <p class="lead">Enter a word to see how many points it's worth in Scrabble!</p>
+      <div class="col-md-8 col-md-offset-2 clearfix">
+        <h1>Scrabble Word Score Calculator</h1>
+        <p class="lead">Enter a word to see how many points it's worth in Scrabble!</p>
 
-      <form id="scrabble" class="form-inline">
-        <div class="form-group center-block">
-          <label for="input-word"></label>
-          <input id="input-word" class="form-control" type="text" placeholder="Enter a word">
-        </div>
+        <form id="scrabble" class="form-horizontal" role="form">
+          <div class="form-group col-xs-9">
+            <label class="sr-only" for="input-word">Enter a word:</label>
+            <input id="input-word" class="form-control" type="text" placeholder="Enter a word">
+          </div>
+          
+          <div class="col-xs-3">
+            <button type="submit" class="btn btn-success">Score</button>
+          </div>
+        </form>
+      </div>
 
-        <button type="submit" class="btn btn-success">Score</button>
-      </form>
-
-      <div id="result">
+      <div id="result" class="col-md-8 col-md-offset-2">
         <ul class="tiles clearfix"></ul>
 
         <p class="lead">The word "<span class="word"></span>" is worth <span class="score"></span> points.</p>
