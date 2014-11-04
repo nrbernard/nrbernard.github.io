@@ -5,6 +5,9 @@ description: One line per day.
 ---
 #One-a-day
 
+###3
+If you shrug, then I want to turn to the mirror and practice my own shrugs.
+
 ###2
 If I have to believe in something, then I choose the light of the convenience store sign.
 
