@@ -5,6 +5,9 @@ description: One line per day.
 ---
 #Control Flow
 
+###$ control_11
+If your guilt becomes a symphony—an actual top user-generated playlist—then just enable a private session.
+
 ###$ control_10
 If I even think of the word *Tuesday*, then it’s like a Palm Desert bungalow—a vacant Tommy Bahama.
 
