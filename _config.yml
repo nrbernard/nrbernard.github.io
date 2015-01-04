@@ -1,4 +1,6 @@
 name: Nick Bernard
 markdown: redcarpet
 pygments: true
-exclude: scss
+sass:
+  sass_dir: _sass
+  style: compressed
