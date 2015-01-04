@@ -4,28 +4,13 @@ html
   line-height: 1.5em
 
 body
-  font-family: 'Lato',  sans-serif
-  color: #fffff6
-
-h1
-  font-weight: bold
-  text-shadow: 1px 1px 0px black,  2px 2px 0px black,  3px 3px 0px black,  4px 4px 0px black,  5px 5px 0px black
-  color: #e24b3b
-  font-size: 2em
-  line-height: 1.5em
-  line-height: 1.5em
-
-@media (min-width: 480px)
-  h1
-    font-size: 2.66667em
-    line-height: 1.125em
-    line-height: 1.5em
+  font-family: $base-font-family
+  font-weight: $base-font-weight
+  color: $base-font-color
 
 h2
-  font-size: 2em
-  line-height: 1.5em
-  line-height: 1.5em
-  color: #e24b3b
+  @include typeSize(large)
+  border-bottom: .25rem solid $red
 
 h3, .intro
   font-size: 1.66667em
@@ -56,7 +41,7 @@ p
 
 a
   text-decoration: none
-  color: #e24b3b
+  color: $red
   -webkit-transition: all, 2s, ease-in-out
   -moz-transition: all, 2s, ease-in-out
   -o-transition: all, 2s, ease-in-out
