@@ -38,6 +38,8 @@ $rhythm-unit: “rem”
  @if $size == "large"
   @include adjust-font-size-to($large-font-size)
   @include adjust-leading-to($large-font-leading)
+  @include trailer(($large-font-leading / 2), $large-font-size, margin)
+  @include trailer(($large-font-leading / 4), $large-font-size, padding)
 
  @if $size == "xlarge"
   @include adjust-font-size-to($xlarge-font-size)
