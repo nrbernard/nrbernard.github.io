@@ -13,7 +13,7 @@ $medium-font-leading: 1.25
 $large-font-size: 32px
 $large-font-leading: 1.25
 $xlarge-font-size: 43px
-$xlarge-font-leading: 1.5
+$xlarge-font-leading: 2
 
 $base-line-height: 30px
 $rhythm-unit: “rem”
@@ -30,6 +30,7 @@ $rhythm-unit: “rem”
  @if $size == "base"
   @include adjust-font-size-to($base-font-size)
   @include adjust-leading-to($base-font-leading)
+  @include trailer(($base-font-leading / 3), $base-font-size, margin)
 
  @if $size == "medium"
   @include adjust-font-size-to($medium-font-size)
@@ -38,7 +39,7 @@ $rhythm-unit: “rem”
  @if $size == "large"
   @include adjust-font-size-to($large-font-size)
   @include adjust-leading-to($large-font-leading)
-  @include trailer(($large-font-leading / 2), $large-font-size, margin)
+  @include trailer(($large-font-leading / 3), $large-font-size, margin)
   @include trailer(($large-font-leading / 4), $large-font-size, padding)
 
  @if $size == "xlarge"

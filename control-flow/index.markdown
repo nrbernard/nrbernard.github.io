@@ -1,9 +1,9 @@
 ---
-layout: no-header
-title-tag: One-a-Day - Nick Bernard
-description: One line per day.
+layout: default
+title-tag: Control Flow - Nick Bernard
+description: Control flow statements.
 ---
-#Control Flow
+##Control Flow
 
 ###$ control_11
 If your guilt becomes a symphony—an actual top user-generated playlist—then just enable a private session.

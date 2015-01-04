@@ -12,32 +12,23 @@ h2
   @include typeSize(large)
   border-bottom: .25rem solid $red
 
-h3, .intro
-  font-size: 1.66667em
-  line-height: 1.2em
-  line-height: 1.2em
-  color: black
+h3
+  @include typeSize(medium)
+  color: $red
 
 .name
-  color: #fffff6
-  font-size: 2em
-  line-height: 1.5em
+  @include typeSize(xlarge)
+  color: $white
   text-transform: uppercase
-  letter-spacing: .1em
+  letter-spacing: .2em
   text-shadow: 1px 1px 0px black,  2px 2px 0px black,  3px 3px 0px black,  4px 4px 0px black,  5px 5px 0px black
-
-.name:hover
-  color: #fffff6
-
-.skill
-  color: #fffff6
-  text-shadow: 1px 1px 0px black,  2px 2px 0px black,  3px 3px 0px black,  4px 4px 0px black,  5px 5px 0px black
+  &:hover
+    color: $white
 
 p
-  font-size: 1.22222em
-  line-height: 1.63636em
-  line-height: 1.63636em
-  margin-bottom: 1em
+  @include typeSize(base)
+  &:last-child
+    @include trailer($base-font-leading, $base-font-size, margin)
 
 a
   text-decoration: none
@@ -46,10 +37,8 @@ a
   -moz-transition: all, 2s, ease-in-out
   -o-transition: all, 2s, ease-in-out
   transition: all, 2s, ease-in-out
-
-a:hover
-  color: #ef9d94
-
+  &:hover
+    color: $red
 
 blockquote
   font-style: italic
