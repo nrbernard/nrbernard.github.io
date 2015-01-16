@@ -1,5 +1,5 @@
 name: Nick Bernard
 markdown: redcarpet
-pygments: true
-gems:
-- jekyll-compass
+highlighter: null
+sass:
+    sass_dir: _sass

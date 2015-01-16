@@ -9,27 +9,18 @@ body
   color: $base-font-color
 
 h2
-  @include typeSize(large)
   border-bottom: .25rem solid $red
 
 h3
-  @include typeSize(medium)
   color: $red
 
 .name
-  @include typeSize(xlarge)
   color: $white
   text-transform: uppercase
   letter-spacing: .2em
   text-shadow: 1px 1px 0px black,  2px 2px 0px black,  3px 3px 0px black,  4px 4px 0px black,  5px 5px 0px black
   &:hover
     color: $white
-
-p
-  @include typeSize(base)
-  &:last-child
-    @include trailer($base-font-leading, $base-font-size, margin)
-
 a
   text-decoration: none
   color: $red
