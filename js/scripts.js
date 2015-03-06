@@ -4,9 +4,8 @@ function setWindowHeight() {
 };
 
 $(function() {
-	$( document ).ready( setWindowHeight );
-	$( window ).resize( setWindowHeight );
-
 	$( "body" ).hide();
+  $( document ).ready( setWindowHeight );
+  $( window ).resize( setWindowHeight );
 	$( "body" ).fadeIn(800);
 });

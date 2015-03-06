@@ -1,5 +1,4 @@
 name: Nick Bernard
 markdown: redcarpet
-highlighter: null
 sass:
     sass_dir: _sass
