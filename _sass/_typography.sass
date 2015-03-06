@@ -1,53 +1,17 @@
+$text: #fff
+
 html
-  font-size: 100%
-  font-size: 16px
-  line-height: 1.5em
+  font-size: 80%
+  text-align: center
 
 body
-  font-family: $base-font-family
-  font-weight: $base-font-weight
-  color: $base-font-color
+  color: $light-grey
 
-h2
-  border-bottom: .25rem solid $red
-
-h3
-  color: $red
-
-.name
-  color: $white
+.title
   text-transform: uppercase
   letter-spacing: .2em
-  text-shadow: 1px 1px 0px black,  2px 2px 0px black,  3px 3px 0px black,  4px 4px 0px black,  5px 5px 0px black
-  &:hover
-    color: $white
+  border-bottom: 4px solid
+  padding-bottom: .2em
+  text-shadow: 1px 1px 0px black, 2px 2px 0px black, 3px 3px 0px black, 4px 4px 0px black, 5px 5px 0px black
 a
   text-decoration: none
-  color: $red
-  -webkit-transition: all, 2s, ease-in-out
-  -moz-transition: all, 2s, ease-in-out
-  -o-transition: all, 2s, ease-in-out
-  transition: all, 2s, ease-in-out
-  &:hover
-    color: $red
-
-blockquote
-  font-style: italic
-  border-left: 4px solid #e24b3b
-  border-shaddow: 4px solid black
-  padding-left: 2em
-  margin: 0
-  font-size: 0.88889em
-  line-height: 2.25em
-
-@media (min-width: 480px)
-  blockquote
-    font-size: 1em
-    line-height: 2em
-    margin-left: 2em
-
-@media (min-width: 480px)
-  pre
-    font-size: 1em
-    line-height: 2em
-    line-height: 1.5em

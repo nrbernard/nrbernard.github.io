@@ -1,42 +1,29 @@
-$small-screen: 768px
+html
+  // background: url("../img/tweed.png")
+  background: $dark-grey
 
-fa-li
-  top: 30%
+.home
+  height: auto
+  display: flex
+  align-items: center
+  justify-content: center
 
-ul.social li
-  font-size: 1.22222em
-  line-height: 1.63636em
-  line-height: 1.63636em
+.about
+  flex: 1
 
-html,
-body
-  height: 100%
-
-.site-header
-  background-color: #333
-  background-color: $gray
-  @media (min-width: $small-screen)
-    width: 20rem
-    position: fixed
-    bottom: 0
-    left: 0
-    top: 0
-
-.container,
-.header-content
-  width: 90%
-  max-width: 45rem
-  padding: 2rem 0
-
-.header-content
-  margin: 0 auto
-  @media (max-width: $small-screen)
-    text-align: center
-
-@media (min-width: $small-screen)
-  .content
-    margin-left: 22rem
-
-@media (max-width: $small-screen)
-  .container
-    margin: 0 auto
+ul.social
+  list-style: none
+  li
+    display: inline-block
+    padding: 0 1em
+    &:first-child
+      padding-left: 0
+    &:last-child
+      padding-right: 0
+  .fa
+    font-size: 1.5em
+  @media (#{$bp-larger-than-desktop})
+    li
+      padding: 0 2em
+    .fa
+      font-size: 3em
