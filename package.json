@@ -7,6 +7,9 @@
   },
   "dependencies": {
     "flow-bin": "^0.54.1",
+    "glamor": "^2.20.40",
+    "glamorous": "^4.8.0",
+    "prop-types": "^15.5.10",
     "react": "^15.6.1",
     "react-dom": "^15.6.1"
   },
