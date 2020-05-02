@@ -1,14 +1,19 @@
 import React from 'react';
 import Head from 'next/head';
-import { Box, Heading, IconButton, Image, Link, Text, theme, ThemeProvider, CSSReset } from '@chakra-ui/core';
+import RouteLink from 'next/link';
+import { Box, Flex, Heading, IconButton, Image, Link, Text, theme, ThemeProvider, CSSReset } from '@chakra-ui/core';
+import { RiLinkedinLine, RiMailLine, RiGithubLine } from 'react-icons/ri';
 
 const customTheme = {
 	...theme,
 	colors: {
 		...theme.colors,
-		brand: {
-			primary: '#E6D2B8',
-			secondary: '#252107',
+		body: '#843893',
+		almond: {
+			100: '#E6D2B9',
+		},
+		independence: {
+			100: '#3B4C68',
 		},
 	},
 	fonts: {
@@ -30,9 +35,25 @@ function HomePage(): JSX.Element {
 				></link>
 				<link href="https://fonts.googleapis.com/css2?family=Galdeano&display=swap" rel="stylesheet"></link>
 			</Head>
-			<Box m="2em auto" width="95%" maxWidth="800px">
+			<Box m="0 auto" width="95%" maxWidth="800px">
+				<Flex as="header" align="center" justify="space-between" p="1em 0">
+					<Heading>
+						<RouteLink href="/">NB</RouteLink>
+					</Heading>
+					<Flex as="header" align="center">
+						<Link href="https://github.com/nrbernard/" isExternal>
+							<IconButton variant="link" variantColor="independence" aria-label="LinkedIn" icon={RiGithubLine} />
+						</Link>
+						<Link href="https://www.linkedin.com/in/nickbernard/" isExternal>
+							<IconButton variant="link" variantColor="independence" aria-label="LinkedIn" icon={RiLinkedinLine} />
+						</Link>
+						<Link href="mailto:nrobertbernard@gmail.com" isExternal>
+							<IconButton variant="link" variantColor="independence" aria-label="Email" icon={RiMailLine} />
+						</Link>
+					</Flex>
+				</Flex>
 				<Box m="0 0 1em 0" position="relative">
-					<Heading position="absolute" top="1em" left="1em" color="brand.primary" size="2xl">
+					<Heading position="absolute" top="1.5em" left="1.5em" color="almond.100" size="xl">
 						Oh, hello there
 					</Heading>
 					<Image
@@ -42,13 +63,10 @@ function HomePage(): JSX.Element {
 					/>
 				</Box>
 				<Box>
-					<Heading as="h1" color="brand.secondary">
+					<Heading as="h1" size="2xl" color="independence.100">
 						I&apos;m Nick Bernard
 					</Heading>
 					<Text>I write software for the web in Portland, OR.</Text>
-					<Link href="mailto:nrobertbernard@gmail.com" isExternal color="blue.600">
-						<IconButton aria-label="email" icon="email" variant="outline" />
-					</Link>
 				</Box>
 			</Box>
 		</ThemeProvider>
