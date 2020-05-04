@@ -39,7 +39,7 @@ function HomePage(): JSX.Element {
 				<Text>I write software for the web in Portland, OR.</Text>
 			</Box>
 			<Box as="footer">
-				<Flex align="center" justify="right">
+				<Flex align="center" justify="flex-end">
 					<Link href="https://github.com/nrbernard/" isExternal>
 						<IconButton variant="link" variantColor="independence" aria-label="LinkedIn" icon={RiGithubLine} />
 					</Link>
