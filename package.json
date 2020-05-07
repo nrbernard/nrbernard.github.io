@@ -22,7 +22,8 @@
     "build": "next build",
     "start": "next start",
     "lint": "eslint '*/**/*.{js,ts,tsx}'",
-    "test": "jest"
+    "test": "jest",
+    "circleci:local": "circleci local execute -c process.yml --job"
   },
   "devDependencies": {
     "@testing-library/jest-dom": "^5.5.0",
