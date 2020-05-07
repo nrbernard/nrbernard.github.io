@@ -58,7 +58,13 @@ module.exports = {
 	// globalTeardown: undefined,
 
 	// A set of global variables that need to be available in all test environments
-	// globals: {},
+	// https://github.com/zeit/next.js/issues/8663#issue-490553899
+	// https://medium.com/@kjaer/setting-up-jest-and-enzyme-for-typescript-next-js-apps-ce383167643
+	globals: {
+		'ts-jest': {
+			tsConfig: '<rootDir>/tsconfig.jest.json',
+		},
+	},
 
 	// The maximum amount of workers used to run your tests. Can be specified as % or a number. E.g. maxWorkers: 10% will use 10% of your CPU amount + 1 as the maximum worker number. maxWorkers: 2 will use a maximum of 2 workers.
 	// maxWorkers: "50%",
@@ -132,7 +138,7 @@ module.exports = {
 	// snapshotSerializers: [],
 
 	// The test environment that will be used for testing
-	// testEnvironment: 'node',
+	testEnvironment: 'jsdom',
 
 	// Options that will be passed to the testEnvironment
 	// testEnvironmentOptions: {},
@@ -147,9 +153,7 @@ module.exports = {
 	// ],
 
 	// An array of regexp pattern strings that are matched against all test paths, matched tests are skipped
-	// testPathIgnorePatterns: [
-	//   "/node_modules/"
-	// ],
+	testPathIgnorePatterns: ['./.next/', './node_modules/'],
 
 	// The regexp pattern or array of patterns that Jest uses to detect test files
 	// testRegex: [],
@@ -167,7 +171,9 @@ module.exports = {
 	// timers: "real",
 
 	// A map from regular expressions to paths to transformers
-	// transform: undefined,
+	transform: {
+		'^.+\\.tsx?$': 'ts-jest',
+	},
 
 	// An array of regexp pattern strings that are matched against all source file paths, matched files will skip transformation
 	// transformIgnorePatterns: [

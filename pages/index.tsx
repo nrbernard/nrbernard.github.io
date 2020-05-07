@@ -1,8 +1,8 @@
 import React from 'react';
 import Head from 'next/head';
-import { ColorModeProvider, theme, ThemeProvider, CSSReset, useColorMode } from '@chakra-ui/core';
+import { ColorModeProvider, ThemeProvider, CSSReset, useColorMode } from '@chakra-ui/core';
 import Home from './home';
-import customTheme from './theme';
+import customTheme from '../theme';
 
 function App(): JSX.Element {
 	const { colorMode } = useColorMode();

@@ -1,8 +1,8 @@
 import React from 'react';
-import Home from './home';
+import Home from '../pages/home';
 import { render, screen, fireEvent } from '@testing-library/react';
 import { ThemeProvider, ColorModeProvider } from '@chakra-ui/core';
-import customTheme from './theme';
+import customTheme from '../theme';
 
 describe('Home', () => {
 	it('renders the header', () => {
