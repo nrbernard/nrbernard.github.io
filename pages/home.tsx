@@ -17,7 +17,7 @@ function HomePage(): JSX.Element {
 				<IconButton
 					variant="link"
 					variantColor="independence"
-					aria-label="theme"
+					aria-label={`${colorMode === 'light' ? 'light' : 'dark'}-theme`}
 					icon={colorMode === 'light' ? RiMoonLine : RiSunLine}
 					onClick={toggleColorMode}
 				/>

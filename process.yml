@@ -1,0 +1,75 @@
+version: 2
+jobs:
+  lint:
+    docker:
+    - image: circleci/node:12.16.3
+    steps:
+    - checkout
+    - run:
+        name: install
+        command: yarn
+    - save_cache:
+        key: dependency-cache-{{ checksum "yarn.lock" }}
+        paths:
+        - ./node_modules
+    - run:
+        name: lint
+        command: yarn lint
+  test:
+    docker:
+    - image: circleci/node:12.16.3
+    steps:
+    - checkout
+    - restore_cache:
+        key: dependency-cache-{{ checksum "yarn.lock" }}
+    - run:
+        name: test
+        command: yarn test --collectCoverage=true
+    - store_artifacts:
+        path: coverage
+        prefix: coverage
+workflows:
+  version: 2
+  lint_and_test:
+    jobs:
+    - lint
+    - test
+
+# Original config.yml file:
+# version: 2.1
+# jobs:
+#   lint:
+#     docker:
+#       - image: circleci/node:12.16.3
+#     steps:
+#       - checkout
+#       - run:
+#           name: install
+#           command: yarn
+#       - save_cache:
+#           key: dependency-cache-{{ checksum \"yarn.lock\" }}
+#           paths:
+#             - ./node_modules
+#       - run:
+#           name: lint
+#           command: yarn lint
+#   test:
+#     docker:
+#       - image: circleci/node:12.16.3
+#     steps:
+#       - checkout
+#       - restore_cache:
+#           key: dependency-cache-{{ checksum \"yarn.lock\" }}
+#       - run:
+#           name: test
+#           command: 'yarn test --collectCoverage=true'
+#       - store_artifacts:
+#           path: coverage
+#           prefix: coverage
+#       
+# workflows:
+#   version: 2.1
+#   lint_and_test:
+#     jobs:
+#       - lint
+#       - test
