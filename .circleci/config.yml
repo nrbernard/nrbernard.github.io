@@ -12,13 +12,13 @@ jobs:
         command: yarn
       - save_cache:
         key: dependency-cache-{{ checksum "yarn.lock" }}
-          paths:
-            - ./node_modules
+        paths:
+          - ./node_modules
       - run:
         name: lint
         command: yarn lint
       - run:
-          name: "Run Jest and Collect Coverage Reports"
-          command: jest --collectCoverage=true
+        name: "Run Jest and Collect Coverage Reports"
+        command: jest --collectCoverage=true
       - store_artifacts:
-          path: coverage
+        path: coverage
