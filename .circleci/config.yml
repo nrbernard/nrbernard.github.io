@@ -5,20 +5,19 @@ jobs:
       - image: circleci/node:12.16.3
     steps:
       - checkout
-      - restore_cache: 
-        key: dependency-cache-{{ checksum "yarn.lock" }}
       - run:
-        name: install
-        command: yarn
+          name: install
+          command: yarn
       - save_cache:
-        key: dependency-cache-{{ checksum "yarn.lock" }}
-        paths:
-          - ./node_modules
+          key: dependency-cache-{{ checksum "yarn.lock" }}
+          paths:
+            - ./node_modules
       - run:
-        name: lint
-        command: yarn lint
+          name: lint
+          command: yarn lint
       - run:
-        name: "Run Jest and Collect Coverage Reports"
-        command: jest --collectCoverage=true
+          name: test
+          command: 'yarn test --collectCoverage=true'
       - store_artifacts:
-        path: coverage
+          path: coverage
+          prefix: coverage
