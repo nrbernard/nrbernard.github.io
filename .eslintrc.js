@@ -5,12 +5,12 @@ module.exports = {
     sourceType: "module",
     ecmaFeatures: {
       jsx: true,
-    }
+    },
   },
   settings: {
-      react: {
-        version: "detect",
-      }
+    react: {
+      version: "detect",
+    },
   },
   extends: [
       "plugin:react/recommended",
