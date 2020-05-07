@@ -10,8 +10,25 @@ jobs:
       - node/with-cache:
           steps:
             - run: yarn
+  lint:
+    executor:
+      name: node/default
+    steps:
+      - checkout
+      - node/with-cache:
+          steps:
             - run: yarn lint
+  test:
+    executor:
+      name: node/default
+    steps:
+      - checkout
+      - node/with-cache:
+          steps:
+            - run: yarn test
 workflows:
-    build-and-test:
+    lint-and-test:
       jobs:
+        - install
         - lint
+        - test
