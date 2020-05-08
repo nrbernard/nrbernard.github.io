@@ -11,3 +11,8 @@ export const load = (): void => {
 export const page = (name: string): void => {
 	window.analytics.page(name);
 };
+
+// eslint-disable-next-line @typescript-eslint/no-explicit-any
+export const track = (name: string, payload: any): void => {
+	analytics.track(name, payload);
+};

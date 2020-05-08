@@ -2,7 +2,7 @@ import React, { useEffect } from 'react';
 import RouteLink from 'next/link';
 import { Box, Flex, Heading, IconButton, Image, Link, Text, useColorMode } from '@chakra-ui/core';
 import { RiLinkedinLine, RiMailLine, RiGithubLine, RiMoonLine, RiSunLine } from 'react-icons/ri';
-import { page } from '../lib/analytics';
+import { page, track } from '../lib/analytics';
 
 function HomePage(): JSX.Element {
 	useEffect(() => {
@@ -24,7 +24,10 @@ function HomePage(): JSX.Element {
 					variantColor="independence"
 					aria-label={`${colorMode === 'light' ? 'light' : 'dark'}-theme`}
 					icon={colorMode === 'light' ? RiMoonLine : RiSunLine}
-					onClick={toggleColorMode}
+					onClick={(): void => {
+						toggleColorMode();
+						track('click', { button: 'theme', mode: colorMode === 'light' ? 'dark' : 'light' });
+					}}
 				/>
 			</Flex>
 			<Box m="0 0 1em 0" position="relative">
