@@ -1,9 +1,14 @@
-import React from 'react';
+import React, { useEffect } from 'react';
 import RouteLink from 'next/link';
 import { Box, Flex, Heading, IconButton, Image, Link, Text, useColorMode } from '@chakra-ui/core';
 import { RiLinkedinLine, RiMailLine, RiGithubLine, RiMoonLine, RiSunLine } from 'react-icons/ri';
+import { page } from '../lib/analytics';
 
 function HomePage(): JSX.Element {
+	useEffect(() => {
+		page('HomePage');
+	}, []);
+
 	const { colorMode, toggleColorMode } = useColorMode();
 
 	return (
