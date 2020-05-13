@@ -46,7 +46,7 @@ export default function Image({ alt, src }: ImageProps): JSX.Element {
 
 	return (
 		<Wrapper loaded={loaded}>
-			<PlaceholderImage src={require(`../public/${src}`)} alt={alt} loaded={loaded} />
+			<PlaceholderImage src={require(`../public/${src}?lqip`)} alt={alt} loaded={loaded} />
 
 			<LoadedImage ref={imgRef} src={require(`../public/${src}`)} alt={alt} />
 		</Wrapper>
