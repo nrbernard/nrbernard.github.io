@@ -1,16 +1,35 @@
 import React, { useState, createRef, useEffect } from 'react';
-import styles from './Image.module.css';
-import classnames from 'classnames';
+import styled from 'styled-components';
 
 interface ImageProps {
 	alt: string;
 	src: string;
 }
 
+interface StyleProps {
+	loaded: boolean;
+}
+
+const Wrapper = styled.div<StyleProps>`
+	position: relative;
+	overflow: ${({ loaded }): string => (loaded ? 'hidden' : 'initial')};
+`;
+
+const PlaceholderImage = styled.img<StyleProps>`
+	width: 100%;
+	filter: blur(25px);
+	opacity: ${({ loaded }): number => (loaded ? 0 : 1)};
+	transition: opacity 0.5s ease-in;
+`;
+
+const LoadedImage = styled.img`
+	position: absolute;
+	top: 0;
+	left: 0;
+`;
+
 export default function Image({ alt, src }: ImageProps): JSX.Element {
 	const [loaded, setLoaded] = useState(false);
-	const wrapperClassName = classnames(styles.wrapper, { [styles.wrapperLoaded]: loaded });
-	const placeholderClassName = classnames(styles.placeholder, { [styles.placeholderLoaded]: loaded });
 	const imgRef = createRef<HTMLImageElement>();
 
 	function imageLoaded(): void {
@@ -26,10 +45,10 @@ export default function Image({ alt, src }: ImageProps): JSX.Element {
 	}, []);
 
 	return (
-		<div className={wrapperClassName}>
-			<img src={require(`../public/${src}?lqip`)} alt={alt} className={placeholderClassName} />
+		<Wrapper loaded={loaded}>
+			<PlaceholderImage src={require(`../public/${src}`)} alt={alt} loaded={loaded} />
 
-			<img ref={imgRef} className={styles.image} src={require(`../public/${src}`)} alt={alt} />
-		</div>
+			<LoadedImage ref={imgRef} src={require(`../public/${src}`)} alt={alt} />
+		</Wrapper>
 	);
 }
