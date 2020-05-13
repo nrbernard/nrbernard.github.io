@@ -34,7 +34,8 @@
     "start": "next start",
     "lint": "eslint '*/**/*.{js,ts,tsx}'",
     "test": "jest",
-    "circleci:local": "circleci local execute -c process.yml --job"
+    "circleci:local": "circleci local execute -c process.yml --job",
+    "types:check": "tsc --noEmit"
   },
   "devDependencies": {
     "@testing-library/jest-dom": "^5.5.0",
@@ -58,7 +59,7 @@
   },
   "husky": {
     "hooks": {
-      "pre-commit": "lint-staged"
+      "pre-commit": "lint-staged && yarn types:check"
     }
   },
   "lint-staged": {

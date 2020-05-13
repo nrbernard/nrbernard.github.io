@@ -17,7 +17,7 @@ const Wrapper = styled.div<StyleProps>`
 
 const PlaceholderImage = styled.img<StyleProps>`
 	width: 100%;
-	filter: blur(25px);
+	filter: blur(20px);
 	opacity: ${({ loaded }): number => (loaded ? 0 : 1)};
 	transition: opacity 0.5s ease-in;
 `;
