@@ -1,8 +1,9 @@
 import React, { useEffect } from 'react';
 import RouteLink from 'next/link';
-import { Box, Flex, Heading, IconButton, Image, Link, Text, useColorMode } from '@chakra-ui/core';
+import { Box, Flex, Heading, IconButton, Link, Text, useColorMode } from '@chakra-ui/core';
 import { RiLinkedinLine, RiMailLine, RiGithubLine, RiMoonLine, RiSunLine } from 'react-icons/ri';
 import { page, track } from '../lib/analytics';
+import Image from '../components/Image';
 
 function HomePage(): JSX.Element {
 	useEffect(() => {
@@ -31,14 +32,10 @@ function HomePage(): JSX.Element {
 				/>
 			</Flex>
 			<Box m="0 0 1em 0" position="relative">
-				<Heading position="absolute" top="1.5em" left="1.5em" color="almond.100" size="xl">
+				<Heading position="absolute" top="1.5em" left="1.5em" color="almond.100" size="xl" zIndex={1}>
 					Oh, hello there
 				</Heading>
-				<Image
-					src="./fishing.jpeg"
-					alt="Nick Bernard fly fishing on the Deschutes River near Maupin, OR"
-					width="100%"
-				/>
+				<Image src="fishing.jpeg" alt="Nick Bernard fly fishing on the Deschutes River near Maupin, OR" />
 			</Box>
 			<Box>
 				<Heading as="h1" size="2xl" color="independence.100">
