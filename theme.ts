@@ -4,7 +4,8 @@ export default {
 	...theme,
 	colors: {
 		...theme.colors,
-		body: '#843893',
+		body: '#FFFFFF',
+		heading: '#FFFFFF',
 		almond: {
 			100: '#E6D2B9',
 		},
@@ -14,6 +15,6 @@ export default {
 	},
 	fonts: {
 		...theme.fonts,
-		heading: '"Galdeano", sans-serif',
+		heading: '"Roboto", sans-serif',
 	},
 };
