@@ -58,35 +58,58 @@ function App(): JSX.Element {
 				/>
 				<Box m="2em auto" width="95%" maxWidth="800px">
 					{/* <Flex as="header" align="center" justify="space-between" p="1em 0"> */}
-					<Heading as="h1" size="2xl" color="white" textTransform="uppercase" textAlign="center" mb={2}>
+					<Heading as="h1" size="2xl" color="white" textTransform="uppercase" textAlign="center" mb={6}>
 						Justice for George Floyd
 					</Heading>
 					<Image src="george-floyd.jpg" alt="George Floyd" />
-					<Heading as="h2" size="lg" mb={2}>
+					<Heading as="h2" size="lg" mt={2} mb={2}>
 						Donate:
 					</Heading>
 					<List styleType="none" mb={1}>
-						<ListItem>
-							<a href="https://www.gofundme.com/f/georgefloyd">Official George Floyd Memorial Fund</a>
+						<ListItem mb={1}>
+							<a target="_blank" rel="noopener noreferrer" href="https://www.gofundme.com/f/georgefloyd">
+								Official George Floyd Memorial Fund
+							</a>
 						</ListItem>
-						<ListItem>
-							<a href="https://www.gofundme.com/f/george-floyd-bigfloyd">George Floyd Fund by Bridgett Floyd</a>
+						<ListItem mb={1}>
+							<a target="_blank" rel="noopener noreferrer" href="https://www.gofundme.com/f/george-floyd-bigfloyd">
+								George Floyd Fund by Bridgett Floyd
+							</a>
 						</ListItem>
-						<ListItem>
-							<a href="https://minnesotafreedomfund.org/donate">Minnesota Freedom Fund</a>
+						<ListItem mb={1}>
+							<a target="_blank" rel="noopener noreferrer" href="https://minnesotafreedomfund.org/donate">
+								Minnesota Freedom Fund
+							</a>
 						</ListItem>
-						<ListItem>
-							<a href="https://www.reclaimtheblock.org/">Reclaim the Block</a>
+						<ListItem mb={1}>
+							<a target="_blank" rel="noopener noreferrer" href="https://www.reclaimtheblock.org/">
+								Reclaim the Block
+							</a>
 						</ListItem>
-						<ListItem>
-							<a href="https://www.blackvisionsmn.org/">Black Visions Collective</a>
+						<ListItem mb={1}>
+							<a target="_blank" rel="noopener noreferrer" href="https://www.blackvisionsmn.org/">
+								Black Visions Collective
+							</a>
 						</ListItem>
-
-						<ListItem>
-							<a href="https://www.northstarhealthcollective.org/donate">North Star Health Collective</a>
+						<ListItem mb={1}>
+							<a target="_blank" rel="noopener noreferrer" href="https://www.northstarhealthcollective.org/donate">
+								North Star Health Collective
+							</a>
 						</ListItem>
-						<ListItem>
-							<a href="https://www.gofundme.com/f/pdx-protest-bail-fund">PDX Protest Bail Fund</a>
+						<ListItem mb={1}>
+							<a target="_blank" rel="noopener noreferrer" href="https://www.gofundme.com/f/pdx-protest-bail-fund">
+								PDX Protest Bail Fund
+							</a>
+						</ListItem>
+						<ListItem mb={1}>
+							<a target="_blank" rel="noopener noreferrer" href="https://www.dontshootpdx.org/">
+								Don&apos;t Shoot PDX
+							</a>
+						</ListItem>
+						<ListItem mb={1}>
+							<a target="_blank" rel="noopener noreferrer" href="https://www.gofundme.com/f/i-run-with-maud">
+								I Run With Maud
+							</a>
 						</ListItem>
 					</List>
 					{/* </Flex> */}
