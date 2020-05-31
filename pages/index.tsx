@@ -5,7 +5,6 @@ import {
 	ThemeProvider,
 	CSSReset,
 	useColorMode,
-	Flex,
 	Box,
 	Heading,
 	List,
@@ -29,10 +28,7 @@ function App(): JSX.Element {
 				<Head>
 					<title>JUSTICE FOR GEORGE FLOYD</title>
 					<meta name="description" content="Justice for George Floyd" />
-					<link
-						rel="icon"
-						href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>🍔</text></svg>"
-					></link>
+					<link rel="icon" href="blm.png"></link>
 					<script
 						dangerouslySetInnerHTML={{
 							__html: `!function(){var analytics=window.analytics=window.analytics||[];if(!analytics.initialize)if(analytics.invoked)window.console&&console.error&&console.error("Segment snippet included twice.");else{analytics.invoked=!0;analytics.methods=["trackSubmit","trackClick","trackLink","trackForm","pageview","identify","reset","group","track","ready","alias","debug","page","once","off","on","addSourceMiddleware","addIntegrationMiddleware"];analytics.factory=function(e){return function(){var t=Array.prototype.slice.call(arguments);t.unshift(e);analytics.push(t);return analytics}};for(var e=0;e<analytics.methods.length;e++){var t=analytics.methods[e];analytics[t]=analytics.factory(t)}analytics.load=function(e,t){var n=document.createElement("script");n.type="text/javascript";n.async=!0;n.src="https://cdn.segment.com/analytics.js/v1/"+e+"/analytics.min.js";var a=document.getElementsByTagName("script")[0];a.parentNode.insertBefore(n,a);analytics._loadOptions=t};analytics.SNIPPET_VERSION="4.1.0";}}();`,
@@ -50,9 +46,17 @@ function App(): JSX.Element {
 						h2,
 						a {
 							color: white;
+							font-weight: bold;
+						}
+						a {
+							text-decoration: underline;
 						}
 						a:hover {
-							text-decoration: underline;
+							color: #c53030;
+						}
+						p,
+						span {
+							color: white;
 						}
 					`}
 				/>
@@ -62,56 +66,57 @@ function App(): JSX.Element {
 						Justice for George Floyd
 					</Heading>
 					<Image src="george-floyd.jpg" alt="George Floyd" />
-					<Heading as="h2" size="lg" mt={2} mb={2}>
+					<p>Support the family of George Floyd, as well as Black-owned and Black-led organizations.</p>
+					<Heading as="h2" mt={2} mb={2}>
 						Donate:
 					</Heading>
 					<List styleType="none" mb={1}>
-						<ListItem mb={1}>
+						<ListItem mb={2}>
 							<a target="_blank" rel="noopener noreferrer" href="https://www.gofundme.com/f/georgefloyd">
 								Official George Floyd Memorial Fund
 							</a>
 						</ListItem>
-						<ListItem mb={1}>
+						<ListItem mb={2}>
 							<a target="_blank" rel="noopener noreferrer" href="https://www.gofundme.com/f/george-floyd-bigfloyd">
 								George Floyd Fund by Bridgett Floyd
 							</a>
 						</ListItem>
-						<ListItem mb={1}>
+						<ListItem mb={2}>
 							<a target="_blank" rel="noopener noreferrer" href="https://minnesotafreedomfund.org/donate">
 								Minnesota Freedom Fund
 							</a>
 						</ListItem>
-						<ListItem mb={1}>
+						<ListItem mb={2}>
 							<a target="_blank" rel="noopener noreferrer" href="https://www.reclaimtheblock.org/">
 								Reclaim the Block
 							</a>
 						</ListItem>
-						<ListItem mb={1}>
+						<ListItem mb={2}>
 							<a target="_blank" rel="noopener noreferrer" href="https://www.blackvisionsmn.org/">
 								Black Visions Collective
 							</a>
 						</ListItem>
-						<ListItem mb={1}>
+						<ListItem mb={2}>
 							<a target="_blank" rel="noopener noreferrer" href="https://www.northstarhealthcollective.org/donate">
 								North Star Health Collective
 							</a>
 						</ListItem>
-						<ListItem mb={1}>
+						<ListItem mb={2}>
 							<a target="_blank" rel="noopener noreferrer" href="https://secure.actblue.com/donate/freeblackmamas2020">
 								National Bail Out
 							</a>
 						</ListItem>
-						<ListItem mb={1}>
+						<ListItem mb={2}>
 							<a target="_blank" rel="noopener noreferrer" href="https://www.gofundme.com/f/pdx-protest-bail-fund">
 								PDX Protest Bail Fund
 							</a>
 						</ListItem>
-						<ListItem mb={1}>
+						<ListItem mb={2}>
 							<a target="_blank" rel="noopener noreferrer" href="https://www.dontshootpdx.org/">
 								Don&apos;t Shoot PDX
 							</a>
 						</ListItem>
-						<ListItem mb={1}>
+						<ListItem mb={2}>
 							<a target="_blank" rel="noopener noreferrer" href="https://www.gofundme.com/f/i-run-with-maud">
 								I Run With Maud
 							</a>
