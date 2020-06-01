@@ -61,7 +61,6 @@ function App(): JSX.Element {
 					`}
 				/>
 				<Box m="2em auto" width="95%" maxWidth="800px">
-					{/* <Flex as="header" align="center" justify="space-between" p="1em 0"> */}
 					<Heading as="h1" size="2xl" color="white" textTransform="uppercase" textAlign="center" mb={6}>
 						Justice for George Floyd
 					</Heading>
@@ -107,6 +106,12 @@ function App(): JSX.Element {
 							</a>
 						</ListItem>
 						<ListItem mb={2}>
+							<a target="_blank" rel="noopener noreferrer" href="https://www.gofundme.com/f/the-black-resilience-fund">
+								Black Resilience Fund
+							</a>
+						</ListItem>
+						
+						<ListItem mb={2}>
 							<a target="_blank" rel="noopener noreferrer" href="https://www.gofundme.com/f/pdx-protest-bail-fund">
 								PDX Protest Bail Fund
 							</a>
@@ -122,7 +127,6 @@ function App(): JSX.Element {
 							</a>
 						</ListItem>
 					</List>
-					{/* </Flex> */}
 				</Box>
 			</ColorModeProvider>
 		</ThemeProvider>
