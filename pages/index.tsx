@@ -110,7 +110,6 @@ function App(): JSX.Element {
 								Black Resilience Fund
 							</a>
 						</ListItem>
-						
 						<ListItem mb={2}>
 							<a target="_blank" rel="noopener noreferrer" href="https://www.gofundme.com/f/pdx-protest-bail-fund">
 								PDX Protest Bail Fund
