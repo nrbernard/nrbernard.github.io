@@ -4,17 +4,20 @@ export default {
 	...theme,
 	colors: {
 		...theme.colors,
-		body: '#FFFFFF',
-		heading: '#FFFFFF',
-		almond: {
-			100: '#E6D2B9',
-		},
-		independence: {
-			100: '#3B4C68',
+		light: {
+			background: theme.colors.red[300],
+			heading: theme.colors.gray[800],
+			text: theme.colors.red[800],
 		},
 	},
 	fonts: {
 		...theme.fonts,
-		heading: '"Roboto", sans-serif',
+		body: 'system-ui, sans-serif',
+		heading: "'Yanone Kaffeesatz', sans-serif",
+		mono: 'Menlo, monospace',
+	},
+	fontSizes: {
+		...theme.fontSizes,
+		'7xl': '84px',
 	},
 };
