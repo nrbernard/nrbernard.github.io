@@ -1,10 +1,12 @@
 export const load = (): void => {
-	const key = process.env.SEGMENT_WRITE_KEY;
+	if (process.env.NODE_ENV === 'production') {
+		const key = process.env.SEGMENT_WRITE_KEY;
 
-	if (key) {
-		window.analytics.load(key);
-	} else {
-		console.error('SEGMENT_WRITE_KEY is undefined');
+		if (key) {
+			window?.analytics?.load(key);
+		} else {
+			console.error('SEGMENT_WRITE_KEY is undefined');
+		}
 	}
 };
 
