@@ -4,10 +4,15 @@ export default {
 	...theme,
 	colors: {
 		...theme.colors,
-		light: {
+		dark: {
 			background: theme.colors.red[300],
 			heading: theme.colors.gray[800],
-			text: theme.colors.red[800],
+			text: theme.colors.blue[600],
+		},
+		light: {
+			background: theme.colors.orange[100],
+			heading: theme.colors.gray[700],
+			text: theme.colors.orange[500],
 		},
 	},
 	fonts: {

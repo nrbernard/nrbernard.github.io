@@ -2,6 +2,7 @@ import React, { useEffect, useState } from 'react';
 import { useColorMode, List, ListItem, Flex, Heading, Box } from '@chakra-ui/core';
 import { CSSTransition, TransitionGroup } from 'react-transition-group';
 import { Global, css } from '@emotion/core';
+import Footer from './Footer';
 
 const people = [
 	{ name: 'George Floyd', href: 'https://blacklivesmatter.com/rest-in-power-beautiful/' },
@@ -22,15 +23,19 @@ const people = [
 		href:
 			'https://www.aclu.org/blog/racial-justice/two-years-after-police-killing-philando-castile-justice-continues-be-denied',
 	},
-	{ name: 'Aiyana Stanley', href: '#' },
 	{ name: 'Tamir Rice', href: '#' },
+	{ name: 'Aiyana Stanley', href: '#' },
+	{ name: 'Trayvon Martin', href: '#' },
 	{ name: 'Walter Scott', href: '#' },
+	{ name: 'Oscar Grant', href: '#' },
 ];
 
 export default function App(): JSX.Element {
 	const { colorMode } = useColorMode();
 	const [visibleCount, setVisibleCount] = useState(1);
 	const listItems = people.slice(0, visibleCount);
+
+	console.log('rerender');
 
 	useEffect(() => {
 		setInterval(() => {
@@ -90,6 +95,7 @@ export default function App(): JSX.Element {
 					</List>
 				</Flex>
 			</Box>
+			<Footer />
 			<Global
 				styles={css`
 					.name-enter {
