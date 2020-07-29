@@ -12,7 +12,6 @@ import {
 	Link,
 	List,
 	ListItem,
-	useColorMode,
 	PopoverHeader,
 	Heading,
 } from '@chakra-ui/core';
@@ -36,8 +35,6 @@ const resources = [
 ];
 
 export default function Footer(): JSX.Element {
-	const { colorMode } = useColorMode();
-
 	return (
 		<Box position="fixed" bottom={8} right={8}>
 			<Popover trigger="hover" placement="top-end">
@@ -48,20 +45,20 @@ export default function Footer(): JSX.Element {
 				<PopoverContent border="0" width={320}>
 					<PopoverArrow />
 					<PopoverHeader>
-						<Heading as="h3" color={`${colorMode}.heading`}>
+						<Heading as="h3" color="gray.700">
 							Resources
 						</Heading>
 					</PopoverHeader>
 					<PopoverBody>
 						{resources.map(({ name, items }) => (
 							<Box key={name} mb={2}>
-								<Heading as="h4" size="lg" color={`${colorMode}.heading`}>
+								<Heading as="h4" size="lg" color="gray.700">
 									{name}
 								</Heading>
 								<List styleType="none">
 									{items.map(({ href, name }) => (
-										<ListItem key={name} color={`${colorMode}.heading`}>
-											<Link href={href} isExternal color={`${colorMode}.text`}>
+										<ListItem key={name} color="gray.700">
+											<Link href={href} isExternal color="orange.500">
 												{name}
 											</Link>
 										</ListItem>
@@ -73,7 +70,7 @@ export default function Footer(): JSX.Element {
 					<PopoverFooter>
 						<Text textAlign="right">
 							Built by{' '}
-							<Link isExternal href="https://github.com/nrbernard" color={`${colorMode}.text`}>
+							<Link isExternal href="https://github.com/nrbernard" color="orange.500">
 								Nick Bernard
 							</Link>
 						</Text>

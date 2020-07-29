@@ -1,0 +1,23 @@
+body,
+#__next,
+.main {
+  min-height: 100vh;
+}
+
+.name-enter {
+  opacity: 0;
+}
+
+.name-enter-active {
+  opacity: 1;
+  transition: opacity 500ms ease-in;
+}
+
+.name-exit {
+  opacity: 1;
+}
+
+.name-exit-active {
+  opacity: 0;
+  transition: opacity 500ms ease-in;
+}

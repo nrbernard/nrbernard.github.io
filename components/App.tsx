@@ -1,7 +1,6 @@
 import React, { useEffect, useState } from 'react';
-import { useColorMode, List, ListItem, Flex, Heading, Box, Link } from '@chakra-ui/core';
+import { List, ListItem, Flex, Heading, Box, Link } from '@chakra-ui/core';
 import { CSSTransition, TransitionGroup } from 'react-transition-group';
-import { Global, css } from '@emotion/core';
 import Footer from './Footer';
 
 const people = [
@@ -45,11 +44,8 @@ const people = [
 ];
 
 export default function App(): JSX.Element {
-	const { colorMode } = useColorMode();
 	const [visibleCount, setVisibleCount] = useState(1);
 	const listItems = people.slice(0, visibleCount);
-
-	console.log('rerender');
 
 	useEffect(() => {
 		setInterval(() => {
@@ -57,10 +53,6 @@ export default function App(): JSX.Element {
 		}, 2000);
 	}, []);
 
-	// base
-	// 480px upwards
-	// 768px upwards
-	// 992px upwards
 	const flexDirection: ('column' | 'row')[] = ['column', 'column', 'row', 'row'];
 	const textAlign: ('left' | 'right')[] = ['left', 'left', 'right', 'right'];
 	const responsiveStyles = {
@@ -77,18 +69,13 @@ export default function App(): JSX.Element {
 
 	return (
 		<>
-			<Box
-				backgroundColor={`${colorMode}.background`}
-				className="main"
-				p={responsiveStyles.padding}
-				pt={responsiveStyles.paddingTop}
-			>
+			<Box backgroundColor="orange.100" className="main" p={responsiveStyles.padding} pt={responsiveStyles.paddingTop}>
 				<Flex flexDirection={responsiveStyles.flexDirection}>
 					<Heading
 						fontSize={responsiveStyles.fontSize}
 						mr={3}
 						textAlign={responsiveStyles.textAlign}
-						color={`${colorMode}.heading`}
+						color={'gray.700'}
 						width={responsiveStyles.headingWidth}
 					>
 						Justice for
@@ -99,8 +86,8 @@ export default function App(): JSX.Element {
 							{listItems.map(({ href, name }) => (
 								<CSSTransition key={name} timeout={500} classNames="name">
 									<ListItem key={name}>
-										<Heading fontSize={responsiveStyles.fontSize} color={`${colorMode}.text`}>
-											<Link href={href} isExternal _hover={{ color: `${colorMode}.heading`, textDecoration: 'none' }}>
+										<Heading fontSize={responsiveStyles.fontSize} color="orange.500">
+											<Link href={href} isExternal _hover={{ color: 'gray.700', textDecoration: 'none' }}>
 												{name}
 											</Link>
 										</Heading>
@@ -112,27 +99,6 @@ export default function App(): JSX.Element {
 				</Flex>
 			</Box>
 			<Footer />
-			<Global
-				styles={css`
-					.name-enter {
-						opacity: 0;
-					}
-
-					.name-enter-active {
-						opacity: 1;
-						transition: opacity 500ms ease-in;
-					}
-
-					.name-exit {
-						opacity: 1;
-					}
-
-					.name-exit-active {
-						opacity: 0;
-						transition: opacity 500ms ease-in;
-					}
-				`}
-			/>
 		</>
 	);
 }
