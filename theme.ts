@@ -5,14 +5,19 @@ export default {
 	colors: {
 		...theme.colors,
 		dark: {
-			background: theme.colors.red[300],
-			heading: theme.colors.gray[800],
-			text: theme.colors.blue[600],
+			background: theme.colors.gray[700],
+			heading: theme.colors.gray[300],
+			text: theme.colors.yellow[100],
 		},
 		light: {
 			background: theme.colors.orange[100],
 			heading: theme.colors.gray[700],
 			text: theme.colors.orange[500],
+		},
+		lightYellow: {
+			background: theme.colors.yellow[200],
+			heading: theme.colors.gray[800],
+			text: theme.colors.green[600],
 		},
 	},
 	fonts: {

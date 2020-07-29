@@ -42,7 +42,7 @@ export default function Footer(): JSX.Element {
 		<Box position="fixed" bottom={8} right={8}>
 			<Popover trigger="hover" placement="top-end">
 				<PopoverTrigger>
-					<IconButton isRound size="lg" variant="ghost" variantColor="black" aria-label="What can I do?" icon="info" />
+					<IconButton isRound size="lg" variant="ghost" variantColor="orange" aria-label="What can I do?" icon="info" />
 				</PopoverTrigger>
 
 				<PopoverContent border="0" width={320}>
@@ -58,9 +58,9 @@ export default function Footer(): JSX.Element {
 								<Heading as="h4" size="lg" color={`${colorMode}.heading`}>
 									{name}
 								</Heading>
-								<List styleType="disc">
+								<List styleType="none">
 									{items.map(({ href, name }) => (
-										<ListItem key={name}>
+										<ListItem key={name} color={`${colorMode}.heading`}>
 											<Link href={href} isExternal color={`${colorMode}.text`}>
 												{name}
 											</Link>

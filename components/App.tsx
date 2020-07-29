@@ -1,5 +1,5 @@
 import React, { useEffect, useState } from 'react';
-import { useColorMode, List, ListItem, Flex, Heading, Box } from '@chakra-ui/core';
+import { useColorMode, List, ListItem, Flex, Heading, Box, Link } from '@chakra-ui/core';
 import { CSSTransition, TransitionGroup } from 'react-transition-group';
 import { Global, css } from '@emotion/core';
 import Footer from './Footer';
@@ -23,11 +23,25 @@ const people = [
 		href:
 			'https://www.aclu.org/blog/racial-justice/two-years-after-police-killing-philando-castile-justice-continues-be-denied',
 	},
-	{ name: 'Tamir Rice', href: '#' },
-	{ name: 'Aiyana Stanley', href: '#' },
-	{ name: 'Trayvon Martin', href: '#' },
-	{ name: 'Walter Scott', href: '#' },
-	{ name: 'Oscar Grant', href: '#' },
+	{ name: 'Tamir Rice', href: 'https://www.cleveland.com/court-justice/2017/01/tamir_rice_shooting_a_breakdow.html' },
+	{ name: 'Aiyana Stanley-Jones', href: 'https://www.aclu.org/other/7-year-old-girl-accidentally-shot-swat-team' },
+	{
+		name: 'Trayvon Martin',
+		href: 'https://obamawhitehouse.archives.gov/the-press-office/2013/07/19/remarks-president-trayvon-martin',
+	},
+	{
+		name: 'Walter Scott',
+		href:
+			'https://www.motherjones.com/politics/2017/05/michael-slager-trial-walter-scott-police-shooting-north-charleston-south-carolina-3/',
+	},
+	{
+		name: 'Freddie Gray',
+		href: 'https://www.rollingstone.com/culture/culture-features/death-of-freddie-gray-5-things-you-didnt-know-129327/',
+	},
+	{
+		name: 'Oscar Grant',
+		href: 'https://www.sfchronicle.com/bayarea/article/10-years-since-Oscar-Grant-s-death-What-13489585.php',
+	},
 ];
 
 export default function App(): JSX.Element {
@@ -82,11 +96,13 @@ export default function App(): JSX.Element {
 
 					<List width={responsiveStyles.listWidth}>
 						<TransitionGroup>
-							{listItems.map(({ name }) => (
+							{listItems.map(({ href, name }) => (
 								<CSSTransition key={name} timeout={500} classNames="name">
 									<ListItem key={name}>
 										<Heading fontSize={responsiveStyles.fontSize} color={`${colorMode}.text`}>
-											{name}
+											<Link href={href} isExternal _hover={{ color: `${colorMode}.heading`, textDecoration: 'none' }}>
+												{name}
+											</Link>
 										</Heading>
 									</ListItem>
 								</CSSTransition>
